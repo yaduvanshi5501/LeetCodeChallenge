@@ -3,12 +3,14 @@ class Solution {
         StringBuilder ans = new StringBuilder();
         int n = 0;
         for(char x:s.toCharArray()){
-            if(x=='(') n++;
-            else n--;
-            if(n>1){
-                ans.append(x);
+            if(x=='('){
+                if(n>0) ans.append(x);
+                n++;
             }
-            else if(n!=0 && x==')') ans.append(x);
+            else{
+                n--;
+                if(n>0) ans.append(x);
+            }
         }
 
         return ans.toString();
