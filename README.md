@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0151-reverse-words-in-a-string) |
 | [1021-remove-outermost-parentheses](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/1021-remove-outermost-parentheses) |
+| [3498-reverse-degree-of-a-string](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/3498-reverse-degree-of-a-string) |
 ## Stack
 |  |
 | ------- |
@@ -136,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0054-spiral-matrix](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0054-spiral-matrix) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/2149-rearrange-array-elements-by-sign) |
+| [3498-reverse-degree-of-a-string](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/3498-reverse-degree-of-a-string) |
 ## Matrix
 |  |
 | ------- |
