@@ -21,16 +21,20 @@ class Solution {
             temp = temp.next;
         }
 
-        cnt = cnt - n;
-        if(cnt == 0) return head.next;
+         // Remove head
+        int pos = cnt - n;
+        if (pos == 0)
+            return head.next;
 
+        // Reach previous node
         temp = head;
-        while(--cnt != 0 && temp!= null){
+
+        for (int i = 1; i < pos; i++) {
             temp = temp.next;
         }
-        if(temp !=null)
-            temp.next = temp.next.next;
 
+        // Remove nth node from end
+        temp.next = temp.next.next;
         return head;
     }
 }
