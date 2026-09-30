@@ -14,13 +14,17 @@ public class Solution {
         ListNode tempA = headA;
         ListNode tempB = headB;
 
-        while(tempA != tempB){
-            
-            tempA = tempA.next;
-            tempB = tempB.next;
-            if(tempA ==null && tempB==null) return null;
-            if(tempA == null) tempA = headB;
-            if(tempB == null) tempB = headA;
+        while (tempA != tempB) {
+
+            if (tempA == null)
+                tempA = headB;
+            else
+                tempA = tempA.next;
+
+            if (tempB == null)
+                tempB = headA;
+            else
+                tempB = tempB.next;
         }
 
         return tempA;
