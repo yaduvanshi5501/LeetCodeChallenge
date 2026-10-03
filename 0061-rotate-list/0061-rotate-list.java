@@ -19,7 +19,7 @@ class Solution {
             curr = curr.next;
         }
         
-        if(k>cnt) k = k%cnt;
+        k = k%cnt;
         cnt = cnt - k;
 
         curr = head;
