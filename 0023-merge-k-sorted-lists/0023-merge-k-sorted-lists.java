@@ -13,13 +13,19 @@ class Solution {
         
         if(lists == null || lists.length ==0) return null;
 
-        ListNode result = null;
-
-        for(int i=0;i<lists.length;i++){
-            result = mergeTwoLists(result,lists[i]);
-        }
-        return result;
+        return merge(lists,0,lists.length-1);
         
+    }
+
+    private ListNode merge(ListNode[] lists, int left, int right){
+        if(left == right) return lists[left];
+
+        int mid = (left + right) /2;
+
+        ListNode list1 = merge(lists, left, mid);
+        ListNode list2 = merge(lists, mid+1, right);
+
+        return mergeTwoLists(list1,list2);
     }
 
     private ListNode mergeTwoLists(ListNode list1, ListNode list2){
