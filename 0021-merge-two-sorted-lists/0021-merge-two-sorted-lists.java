@@ -28,20 +28,16 @@ class Solution {
                 newList.next = curr2;
                 curr2 = curr2.next;
             }
-            
+
             newList = newList.next;
         }
 
-        while(curr1 != null){
+        if(curr1 != null){
             newList.next = curr1;
-            newList = newList.next;
-            curr1 = curr1.next;
         }
 
-        while(curr2 != null){
+        if(curr2 != null){
             newList.next = curr2;
-            newList = newList.next;
-            curr2 = curr2.next;
         }
 
         return newhead.next;
