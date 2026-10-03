@@ -39,8 +39,9 @@ class Solution {
             }
             curr = curr.next;
         }
-        if(list1 != null) curr.next = list1;
-        if(list2 != null) curr.next = list2;
+        // if(list1 != null) curr.next = list1;
+        // if(list2 != null) curr.next = list2;
+        curr.next = (list1 != null) ? list1 : list2;
 
         return dummy.next;
     }
