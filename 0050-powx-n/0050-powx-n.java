@@ -1,12 +1,17 @@
 class Solution {
     public double myPow(double x, int n) {
-        long N = n;
+        long N = Math.abs((long)n);
 
-        if (N < 0) {
-            return 1.0/power(x,-N);
+        // if (N < 0) {
+        //     return 1.0/power(x,-N);
+        // }
+
+        // return power(x, N);
+        double ans= power(x,N);
+        if(n<0){
+            return 1.0/ans;
         }
-
-        return power(x, N);
+        return ans;
     }
 
     private double power(double x, long n) {
