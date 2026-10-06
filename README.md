@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0022-generate-parentheses) |
 | [0151-reverse-words-in-a-string](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0151-reverse-words-in-a-string) |
 | [1021-remove-outermost-parentheses](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/1021-remove-outermost-parentheses) |
 | [3498-reverse-degree-of-a-string](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/3498-reverse-degree-of-a-string) |
@@ -15,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bracket Sequences
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0022-generate-parentheses) |
 | [1021-remove-outermost-parentheses](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/1021-remove-outermost-parentheses) |
 ## Array
 |  |
@@ -144,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0022-generate-parentheses) |
 | [0053-maximum-subarray](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0053-maximum-subarray) |
 | [0118-pascals-triangle](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -250,4 +253,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0023-merge-k-sorted-lists) |
+## Backtracking
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/yaduvanshi5501/LeetCodeChallenge/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
