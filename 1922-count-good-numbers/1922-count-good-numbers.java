@@ -4,21 +4,11 @@ class Solution {
     
     public int countGoodNumbers(long n) {
 
-        long odd = 0;
-        long even = 0;
-        if(n%2 ==0){
-            odd = n/2;
-            even = n/2;
-        }else{
-            n = n-1;
-            odd = n/2+1;
-            even = n/2;
-        }
-
+        long odd = (n+1)/2;
+        long even = n/2;
+     
         long evenans = pow(5,odd);
-        evenans = evenans % MOD;
         long oddans = pow(4,even);
-        oddans = oddans % MOD;
 
         return (int)((evenans * oddans)%MOD);
     }
@@ -28,14 +18,11 @@ class Solution {
         if(n==0) return 1;
 
         long result = pow(val, n/2);
-
-        result = result %MOD;
-        result = result * result;
+        result = (result * result) % MOD;
 
         if(n%2 !=0){
-            result = result * val;
+            result = (result * val) % MOD;
         }
-        
         return result;
     }
 
