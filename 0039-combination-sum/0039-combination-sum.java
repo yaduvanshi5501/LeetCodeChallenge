@@ -4,22 +4,23 @@ class Solution {
         solve(0 , new ArrayList<>(), candidates, target);
         return ans;
     }
-    private void solve(int idx, List<Integer> temp, int[] candidates, int remaining){
+   private void solve(int start, List<Integer> temp,
+                       int[] candidates, int remaining) {
 
-        if(remaining == 0){
+        if (remaining == 0) {
             ans.add(new ArrayList<>(temp));
             return;
         }
-        
-        if(idx == candidates.length || remaining < 0) return;
 
-        temp.add(candidates[idx]);
+        for (int i = start; i < candidates.length; i++) {
+            if (candidates[i] > remaining) continue;
 
-        solve(idx, temp, candidates, remaining - candidates[idx]);
+            temp.add(candidates[i]);
 
-        temp.remove(temp.size()-1);
+            // i, not i + 1, because reuse is allowed
+            solve(i, temp, candidates, remaining - candidates[i]);
 
-        solve(idx+1, temp, candidates, remaining);
-
+            temp.remove(temp.size() - 1);
+        }
     }
 }
