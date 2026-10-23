@@ -11,13 +11,15 @@ class Solution {
             return;
         }
 
-        if(idx > 9 || rem < 0) return;
+        if(temp.size() >= k || rem <= 0) return;
 
-        temp.add(idx);
-        solve(idx+1, temp, k ,rem - idx);
+        for(int i=idx;i<10;i++){
+         
+            temp.add(i);
+            solve(i+1, temp, k ,rem - i);
 
-        temp.remove(temp.size()-1);
-        solve(idx+1, temp, k ,rem);
+            temp.remove(temp.size()-1);
+        }
 
     }
 }
