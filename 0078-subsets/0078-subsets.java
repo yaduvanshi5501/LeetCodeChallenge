@@ -10,13 +10,10 @@ class Solution {
     private void backtrack(int idx, List<Integer>current, List<List<Integer>> result, int[]nums){
         
         result.add(new ArrayList<>(current));
-        
-        for(int j=idx; j<nums.length; j++){
-            
-            current.add(nums[j]);
 
-            backtrack(j+1, current,result, nums);
-
+        for(int i =idx;i<nums.length;i++){
+            current.add(nums[i]);
+            backtrack(i+1, current, result, nums);
             current.remove(current.size()-1);
         }
         
