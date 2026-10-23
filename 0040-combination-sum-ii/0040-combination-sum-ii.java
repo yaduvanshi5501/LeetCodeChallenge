@@ -12,19 +12,13 @@ class Solution {
             return;
         }
 
-        if(idx == candidates.length || rem < 0 ) return;
-
-        temp.add(candidates[idx]);
-        solve(idx+1, temp, candidates, rem - candidates[idx]);
-
-        temp.remove(temp.size() - 1);
-
-        int next = idx + 1;
-        while (next < candidates.length &&
-               candidates[next] == candidates[idx]) {
-            next++;
+        for(int i = idx;i<candidates.length;i++){
+            if(i > idx && candidates[i] == candidates[i-1]) continue;
+            if(candidates[i] > rem ) break;
+            
+            temp.add(candidates[i]);
+            solve(i+1,temp,candidates, rem-candidates[i]);
+            temp.remove(temp.size()-1);
         }
-
-        solve(next, temp, candidates, rem);
     }
 }
